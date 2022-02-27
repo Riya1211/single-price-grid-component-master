@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+body {
+  background: var(--LightGray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container {
+  width: 600px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: -3px 2px 13px 0px rgba(0, 0, 0, 0.7);
+}
+.section1 {
+  background-color: #fff;
+  width: 600px;
+  height: 220px;
+  padding-top: 5%;
+  padding-left: 3%;
+}
+.section1 h1 {
+  color: var(--Cyan);
+  margin-bottom: 1rem;
+}
+.section1 h3 {
+  color: var(--BrightYellow);
+  margin-bottom: 1rem;
+}
+.section1 p {
+  color: var(--GrayishBlue);
+  margin-bottom: 0.5rem;
+}
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box1 {
+  background: var(--Cyan);
+  width: 300px;
+  height: 240px;
+  padding-top: 4%;
+  padding-left: 3%;
+  color: #fff;
+}
+.box1 p {
+  margin: 1rem 0 1rem;
+}
+.bold {
+  font-size: 30px;
+}
+.light {
+  color: var(--GrayishBlue);
+}
+
+button {
+  width: 240px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: var(--BrightYellow);
+  color: #f7f9bc;
+  font-size: 16px;
+  box-shadow: -3px 2px 13px 0px rgba(0, 0, 0, 0.7);
+}
+.box2 {
+  background: #51bebd;
+  width: 300px;
+  height: 240px;
+  padding-top: 4%;
+  padding-left: 3%;
+}
+h3 {
+  color: #fff;
+}
+ul {
+  list-style: none;
+  color: #a8ebf4;
+  font-size: 16px;
+  padding: 1rem 0;
+}
+li {
+  padding: 1px 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 350px;
+    height: 700px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box1 {
+    width: 350px;
+    padding: 20px 0 0 40px;
+  }
+  .box2 {
+    width: 350px;
+    padding: 20px 0 0 40px;
+  }
+}
